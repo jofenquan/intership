@@ -27,3 +27,11 @@ C:\Users\user\Desktop\Login\学生管理情報\obj\Debug\学生管理情報.cspr
 C:\Users\user\Desktop\Login\学生管理情報\obj\Debug\学生管理情報.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\Login\学生管理情報\obj\Debug\学生管理情報.exe
 C:\Users\user\Desktop\Login\学生管理情報\obj\Debug\学生管理情報.pdb
+C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.Form1.resources
+C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.Form2.resources
+C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.Form3.resources
+C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.Form5.resources
+C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.Form6.resources
+C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.csproj.GenerateResource.cache
