@@ -14,6 +14,8 @@ namespace 学生管理情報
 {
     public partial class Form3 : Form
     {
+        private static string FILE_PATH = @"C:\Users\user\Desktop\Login\";
+        private static string FILE_NAME = "Text.txt";
         Form2 fgrid;
         public Form3(Form2 fg)
         {
@@ -31,7 +33,7 @@ namespace 学生管理情報
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamWriter Writer = new StreamWriter(@"C:\Users\user\Desktop\Login\Text.txt", true);
+            StreamWriter Writer = new StreamWriter(FILE_PATH + FILE_NAME, true);
 
             string[] txt = { loginId.Text, lastName.Text, firstName.Text, year.Text, school.Text, address.Text, birthday.Text, department.Text, subject.Text, mail.Text, tel.Text, intership.Text, comment.Text };
             TextBox[] textB = { loginId, lastName, year, school, address, subject, department, tel, firstName, birthday, mail, intership, comment };

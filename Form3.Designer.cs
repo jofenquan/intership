@@ -57,13 +57,12 @@ namespace 学生管理情報
             this.comment = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(364, 99);
+            this.label1.Location = new System.Drawing.Point(61, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 24);
@@ -73,7 +72,7 @@ namespace 学生管理情報
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(364, 168);
+            this.label2.Location = new System.Drawing.Point(35, 148);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 24);
@@ -83,7 +82,7 @@ namespace 学生管理情報
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(335, 253);
+            this.label3.Location = new System.Drawing.Point(656, 24);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 24);
@@ -93,7 +92,7 @@ namespace 学生管理情報
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(364, 342);
+            this.label4.Location = new System.Drawing.Point(35, 353);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 24);
@@ -103,17 +102,17 @@ namespace 学生管理情報
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(364, 429);
+            this.label5.Location = new System.Drawing.Point(26, 282);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 24);
+            this.label5.Size = new System.Drawing.Size(67, 24);
             this.label5.TabIndex = 4;
-            this.label5.Text = "メールアドレス";
+            this.label5.Text = "メール";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(364, 517);
+            this.label6.Location = new System.Drawing.Point(14, 428);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 24);
@@ -123,7 +122,7 @@ namespace 学生管理情報
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(905, 174);
+            this.label7.Location = new System.Drawing.Point(680, 158);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 24);
@@ -133,7 +132,7 @@ namespace 学生管理情報
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(905, 104);
+            this.label8.Location = new System.Drawing.Point(59, 89);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(34, 24);
@@ -143,7 +142,7 @@ namespace 学生管理情報
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(920, 229);
+            this.label9.Location = new System.Drawing.Point(35, 214);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 24);
@@ -153,7 +152,7 @@ namespace 学生管理情報
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(905, 282);
+            this.label10.Location = new System.Drawing.Point(704, 224);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 24);
@@ -162,104 +161,116 @@ namespace 学生管理情報
             // 
             // loginId
             // 
-            this.loginId.Location = new System.Drawing.Point(486, 99);
+            this.loginId.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.loginId.Location = new System.Drawing.Point(103, 14);
             this.loginId.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.loginId.Name = "loginId";
-            this.loginId.Size = new System.Drawing.Size(301, 31);
+            this.loginId.Size = new System.Drawing.Size(300, 39);
             this.loginId.TabIndex = 10;
             // 
             // lastName
             // 
-            this.lastName.Location = new System.Drawing.Point(999, 94);
+            this.lastName.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lastName.Location = new System.Drawing.Point(103, 79);
             this.lastName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.lastName.Name = "lastName";
-            this.lastName.Size = new System.Drawing.Size(337, 31);
+            this.lastName.Size = new System.Drawing.Size(300, 39);
             this.lastName.TabIndex = 11;
             // 
             // year
             // 
-            this.year.Location = new System.Drawing.Point(486, 163);
+            this.year.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.year.Location = new System.Drawing.Point(103, 138);
             this.year.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.year.Name = "year";
-            this.year.Size = new System.Drawing.Size(301, 31);
+            this.year.Size = new System.Drawing.Size(300, 39);
             this.year.TabIndex = 12;
             // 
             // school
             // 
-            this.school.Location = new System.Drawing.Point(999, 168);
+            this.school.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.school.Location = new System.Drawing.Point(772, 148);
             this.school.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.school.Name = "school";
-            this.school.Size = new System.Drawing.Size(337, 31);
+            this.school.Size = new System.Drawing.Size(300, 39);
             this.school.TabIndex = 13;
             // 
             // address
             // 
-            this.address.Location = new System.Drawing.Point(486, 342);
+            this.address.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.address.Location = new System.Drawing.Point(103, 343);
             this.address.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(160, 31);
+            this.address.Size = new System.Drawing.Size(300, 39);
             this.address.TabIndex = 14;
             // 
             // subject
             // 
-            this.subject.Location = new System.Drawing.Point(999, 277);
+            this.subject.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.subject.Location = new System.Drawing.Point(772, 214);
             this.subject.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.subject.Name = "subject";
-            this.subject.Size = new System.Drawing.Size(337, 31);
+            this.subject.Size = new System.Drawing.Size(300, 39);
             this.subject.TabIndex = 15;
             // 
             // department
             // 
-            this.department.Location = new System.Drawing.Point(999, 224);
+            this.department.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.department.Location = new System.Drawing.Point(103, 204);
             this.department.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.department.Name = "department";
-            this.department.Size = new System.Drawing.Size(337, 31);
+            this.department.Size = new System.Drawing.Size(300, 39);
             this.department.TabIndex = 16;
             // 
             // tel
             // 
-            this.tel.Location = new System.Drawing.Point(999, 331);
+            this.tel.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tel.Location = new System.Drawing.Point(772, 272);
             this.tel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tel.Name = "tel";
-            this.tel.Size = new System.Drawing.Size(337, 31);
+            this.tel.Size = new System.Drawing.Size(300, 39);
             this.tel.TabIndex = 17;
             // 
             // firstName
             // 
-            this.firstName.Location = new System.Drawing.Point(1456, 99);
+            this.firstName.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.firstName.Location = new System.Drawing.Point(772, 79);
             this.firstName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.firstName.Name = "firstName";
-            this.firstName.Size = new System.Drawing.Size(256, 31);
+            this.firstName.Size = new System.Drawing.Size(300, 39);
             this.firstName.TabIndex = 18;
             // 
             // birthday
             // 
-            this.birthday.Location = new System.Drawing.Point(486, 253);
+            this.birthday.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.birthday.Location = new System.Drawing.Point(772, 14);
             this.birthday.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.birthday.Name = "birthday";
-            this.birthday.Size = new System.Drawing.Size(160, 31);
+            this.birthday.Size = new System.Drawing.Size(300, 39);
             this.birthday.TabIndex = 19;
             // 
             // mail
             // 
-            this.mail.Location = new System.Drawing.Point(512, 418);
+            this.mail.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.mail.Location = new System.Drawing.Point(103, 272);
             this.mail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.mail.Name = "mail";
-            this.mail.Size = new System.Drawing.Size(160, 31);
+            this.mail.Size = new System.Drawing.Size(300, 39);
             this.mail.TabIndex = 20;
             // 
             // intership
             // 
-            this.intership.Location = new System.Drawing.Point(990, 376);
+            this.intership.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.intership.Location = new System.Drawing.Point(772, 343);
             this.intership.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.intership.Name = "intership";
-            this.intership.Size = new System.Drawing.Size(347, 31);
+            this.intership.Size = new System.Drawing.Size(300, 39);
             this.intership.TabIndex = 21;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(881, 336);
+            this.label11.Location = new System.Drawing.Point(656, 282);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(106, 24);
@@ -269,7 +280,7 @@ namespace 学生管理情報
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(741, 387);
+            this.label12.Location = new System.Drawing.Point(526, 353);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(236, 24);
@@ -279,7 +290,7 @@ namespace 学生管理情報
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(1362, 104);
+            this.label13.Location = new System.Drawing.Point(728, 89);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(34, 24);
@@ -288,50 +299,40 @@ namespace 学生管理情報
             // 
             // comment
             // 
-            this.comment.Location = new System.Drawing.Point(530, 506);
+            this.comment.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comment.Location = new System.Drawing.Point(103, 418);
             this.comment.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.comment.Multiline = true;
             this.comment.Name = "comment";
-            this.comment.Size = new System.Drawing.Size(1104, 31);
+            this.comment.Size = new System.Drawing.Size(969, 130);
             this.comment.TabIndex = 25;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(670, 595);
+            this.button1.Location = new System.Drawing.Point(622, 574);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 75);
+            this.button1.Size = new System.Drawing.Size(220, 75);
             this.button1.TabIndex = 26;
-            this.button1.Text = "button1";
+            this.button1.Text = "登録";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1170, 613);
+            this.button2.Location = new System.Drawing.Point(852, 574);
             this.button2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(358, 58);
+            this.button2.Size = new System.Drawing.Size(220, 75);
             this.button2.TabIndex = 27;
-            this.button2.Text = "button2";
+            this.button2.Text = "キャンセル";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(530, 466);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(151, 28);
-            this.checkBox1.TabIndex = 28;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2163, 720);
-            this.Controls.Add(this.checkBox1);
+            this.ClientSize = new System.Drawing.Size(1086, 663);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comment);
@@ -360,9 +361,10 @@ namespace 学生管理情報
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "学生登録";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,6 +400,5 @@ namespace 学生管理情報
         private System.Windows.Forms.TextBox comment;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

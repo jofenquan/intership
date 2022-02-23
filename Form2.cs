@@ -14,6 +14,8 @@ namespace 学生管理情報
     public partial class Form2 : Form
 
     {
+        private static string FILE_PATH = @"C:\Users\user\Desktop\Login\";
+        private static string FILE_NAME = "Text.txt";
         private DataTable table;
 
         public Form2()
@@ -152,7 +154,7 @@ namespace 学生管理情報
 
         private void ReadFileIntoTable(DataRowCollection rowCollection)
         {
-            string[] lines = File.ReadAllLines(@"C:\Users\user\Desktop\Login\Text.txt");
+            string[] lines = File.ReadAllLines(FILE_PATH + FILE_NAME);
             string[] values;
 
             for (int i = 0; i < lines.Length; i++)
@@ -172,9 +174,9 @@ namespace 学生管理情報
         private void CreateFileWatcher()
         {
             FileSystemWatcher watcher = new FileSystemWatcher();
-            watcher.Path = @"C:\Users\user\Desktop\Login";
+            watcher.Path = FILE_PATH;
             watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName;
-            watcher.Filter = "Text.txt";
+            watcher.Filter = FILE_NAME;
             watcher.Changed += new FileSystemEventHandler(WatchFileOnChanged);
             watcher.EnableRaisingEvents = true;
         }
