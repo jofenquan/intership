@@ -35,3 +35,10 @@ C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.Form3.resources
 C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.Form5.resources
 C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.Form6.resources
 C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.csproj.GenerateResource.cache
+C:\Users\user\Desktop\intership\bin\Debug\学生管理情報.exe.config
+C:\Users\user\Desktop\intership\bin\Debug\学生管理情報.exe
+C:\Users\user\Desktop\intership\bin\Debug\学生管理情報.pdb
+C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.Properties.Resources.resources
+C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.exe
+C:\Users\user\Desktop\intership\obj\Debug\学生管理情報.pdb

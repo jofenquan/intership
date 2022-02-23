@@ -24,29 +24,8 @@ namespace 学生管理情報
         private void Form2_Load(object sender, EventArgs e)
         {
 
-            table = new DataTable("Table");
-
-            table.Columns.Add("Login ID");
-            table.Columns.Add("性");
-            table.Columns.Add("名");
-            table.Columns.Add("学年", Type.GetType("System.Int32"));
-            table.Columns.Add("学校");
-            table.Columns.Add("住所");
-            table.Columns.Add("生年月日");
-            table.Columns.Add("学部");
-            table.Columns.Add("学科");
-            table.Columns.Add("メール");
-            table.Columns.Add("電話番号");
-            table.Columns.Add("参加したインターンシップ");
-            table.Columns.Add("コメント");
-            
-            
-
-            readFileIntoTable(table.Rows);
-            //table.Rows.Add("001", "村上 飛鳥", "室蘭工業大学", "工学部", "情報電子工学系学科", "3", "1", "1999", "22", "090", "mery19991811@gmail.com");
-
-            dataGridView1.DataSource = table;
-
+            ResetTable();
+            CreateFileWatcher();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -142,7 +121,36 @@ namespace 学生管理情報
             }
         }
 
-        private void readFileIntoTable(DataRowCollection rowCollection)
+        private void ResetTable()
+        {
+            table = new DataTable("Table");
+
+            table.Columns.Add("Login ID");
+            table.Columns.Add("性");
+            table.Columns.Add("名");
+            table.Columns.Add("学年", Type.GetType("System.Int32"));
+            table.Columns.Add("学校");
+            table.Columns.Add("住所");
+            table.Columns.Add("生年月日");
+            table.Columns.Add("学部");
+            table.Columns.Add("学科");
+            table.Columns.Add("メール");
+            table.Columns.Add("電話番号");
+            table.Columns.Add("参加したインターンシップ");
+            table.Columns.Add("コメント");
+
+            ReadFileIntoTable(table.Rows);
+            if (dataGridView1.InvokeRequired)
+            {
+                dataGridView1.Invoke(new Action(() => dataGridView1.DataSource = table));
+            }
+            else
+            {
+                dataGridView1.DataSource = table;
+            }
+        }
+
+        private void ReadFileIntoTable(DataRowCollection rowCollection)
         {
             string[] lines = File.ReadAllLines(@"C:\Users\user\Desktop\Login\Text.txt");
             string[] values;
@@ -159,6 +167,21 @@ namespace 学生管理情報
                 rowCollection.Add(row);
             }
 
+        }
+
+        private void CreateFileWatcher()
+        {
+            FileSystemWatcher watcher = new FileSystemWatcher();
+            watcher.Path = @"C:\Users\user\Desktop\Login";
+            watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName;
+            watcher.Filter = "Text.txt";
+            watcher.Changed += new FileSystemEventHandler(WatchFileOnChanged);
+            watcher.EnableRaisingEvents = true;
+        }
+
+        private void WatchFileOnChanged(object source, FileSystemEventArgs e)
+        {
+            ResetTable();
         }
     }
 }
